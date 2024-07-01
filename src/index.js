@@ -42,41 +42,41 @@
     showModal: function () {
       if (typeof document !== "undefined") {
         // Define the modal HTML structure
-        const modalHTML = `
-          <div id="modal">
-            <style>
-              /* Define your CSS styles here */
-              #modal {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.5);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
+        // const modalHTML = `
+        //   <div id="modal">
+        //     <style>
+        //       /* Define your CSS styles here */
+        //       #modal {
+        //         position: fixed;
+        //         top: 0;
+        //         left: 0;
+        //         width: 100%;
+        //         height: 100%;
+        //         background-color: rgba(0, 0, 0, 0.5);
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //       }
 
-              #modalContent {
-                background-color: white;
-                padding: 20px;
-                border-radius: 5px;
-              }
-            </style>
-            <div id="modalContent">
-              <form id="myModalForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <button type="button" id="submitBtn">Submit</button>
-                <button type="button" id="closeBtn">Close</button>
-              </form>
-            </div>
-          </div>
-        `;
-
+        //       #modalContent {
+        //         background-color: white;
+        //         padding: 20px;
+        //         border-radius: 5px;
+        //       }
+        //     </style>
+        //     <div id="modalContent">
+        //       <form id="myModalForm">
+        //         <label for="name">Name:</label>
+        //         <input type="text" id="name" name="name" required><br><br>
+        //         <label for="email">Email:</label>
+        //         <input type="email" id="email" name="email" required><br><br>
+        //         <button type="button" id="submitBtn">Submit</button>
+        //         <button type="button" id="closeBtn">Close</button>
+        //       </form>
+        //     </div>
+        //   </div>
+        // `;
+        const modalHTML = document.getElementById("modal").innerHTML;
         // Append the modal HTML to the body
         const modalContainer = document.createElement("div");
         modalContainer.innerHTML = modalHTML;
