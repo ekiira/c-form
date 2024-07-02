@@ -1,16 +1,29 @@
 {
   "name": "mylibtmsn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "testing libraries",
-  "main": "src/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ekiira/c-form.git"
   },
-  "keywords": ["contact", "form", "javascript", "library"],
+  "keywords": [
+    "contact",
+    "form",
+    "javascript",
+    "library"
+  ],
   "author": "Tomi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.0.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
